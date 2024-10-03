@@ -122,3 +122,4 @@ def add2 (x, y):
     return x + y        #returns the sum of x and y to where the function was called
 
 add2 (2, 10)            #never prints anything
+print(add2)
