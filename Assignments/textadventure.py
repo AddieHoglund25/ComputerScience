@@ -94,7 +94,7 @@ def walk_to_maine():                                                            
         start_adventure()
 
 
-def wagon_to_maine():
+def wagon_to_maine():                                                                                                                       
     print("You have decided to take a wagon and horse to Maine, this is the longest journey, what do you want to bring?")                   # wagon and horse to maine funcion
     print("1. Lots of food and water, a spare wheel, a bow, arrows, a knife, tent, and a jacket")                                           # option 1 (lots of food)
     print("2. Little food and water, lots of blankets, a knife, fire equipment, tent, and medicine")                                        # option 2 (little food)
@@ -113,61 +113,289 @@ def wagon_to_maine():
 #  FUNCTIONS OF MORE CHOICES LIKE GOING OVER OR AROUND MOUNTAINS, WHEN THE USER WANTS TO LEAVE, AND WHAT THEY WANT TO BRING
 
 
-def over_rocky_mountains():
-    print("You have picked to go over the rocky mountains. When you are on top of the mountains a blizzard decides to come on top of the mountain. What do you want to do?")
-    print("1. Stay on top of the mountain and wait for the blizzard to pass by")
-    print("2. Keep walking to the other side of the mountain through the blizzard")
+def over_rocky_mountains():                                                                                                                                                       # go over rocky mountain function
+    print("You have picked to go over the rocky mountains. When you are on top of the mountains a blizzard decides to come on top of the mountain. What do you want to do?")      
+    print("1. Stay on top of the mountain and wait for the blizzard to pass by")                                                                                                  # option 1 (stay on top of mountain)
+    print("2. Keep walking to the other side of the mountain through the blizzard")                                                                                               # option 2 (walk through the blizzard)
 
     choice = input("> ")
 
     if choice == "1":
-
+        stay_on_mountain()
     elif choice == "2":
-
+        keep_walking_rockies()
     else:
-        print("invalid choice, try again")
+        print("invalid choice, start over")
         start_adventure()
 
 
-def around_rocky_mountains():
+def around_rocky_mountains():                                                                                                                                       # around rocky mountain function
     print("You decided to go around the rocky mountains, which is the longer route. You are starting to run out of food, what do you want to do?")
-    print("1. Turn around and go home")
-    print("2. Keep going and go hunting for food")
+    print("1. Turn around and go home")                                                                                                                             # option 1 (go home)
+    print("2. Keep going and go hunting for food")                                                                                                                  # option 2 (hunt for food)
+
+    choice = input("> ")
+
+    if choice == "1":
+        go_home()
+    elif choice == "2":
+        hunt_for_food_rockies()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
 
 
-def leave_tomorrow():
-    print("You have decided to leave tomorrow morning")
+def leave_tomorrow():                                                                                                            # leave tomorrow function
+    print("You have decided to leave tomorrow morning. What do you want to do?")
+    print("1. Go to bed")                                                                                                        # option 1 (go to bed)
+    print("2. Pack your stuff")                                                                                                  # option 2 (pack your stuff)
+
+    choice = input("> ")
+
+    if choice == "1":
+        go_to_bed()
+    elif choice == "2":
+        pack_your_stuff()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+        
+        
+def leave_friday():                                                                                                                                    # leave friday function
+    print("You have decided to leave Friday, what do you want to do to pass time?")                 
+    print("1. Go to work")                                                                                                                             # option 1 (go to work)
+    print("2. go visit your neighbors at their bakery")                                                                                                # option 2 (go visit neighbors)
+
+    choice = input("> ")
+
+    if choice == "1":
+        go_to_work()
+    elif choice == "2":
+        visit_neighbors_bakery()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+
+def over_appalachian_mountains():                                                                                              # go over appalachian mountains function
+    print("You have decided to go over the appalachian mountains and run into hillbillies. What do you want to do?")
+    print("1. go talk to them")                                                                                                # option 1 (go talk to hillbillies)
+    print("2. fight them")                                                                                                     # option 2 (fight hillbillies)
+
+    choice = input("> ")
+
+    if choice == "1":
+        talk_to_hillbillies()
+    elif choice == "2":
+        fight_hillbillies()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+
+def around_appalachian_mountains():                                                                                                                     # go around appalchian mountains function
+    print("You have picked to go around the appalachian mountains. By doing this you started to run out of food, what do you want to do?")
+    print("1. Stop at the nearest village")                                                                                                             # option 1 (stop at the nearest village)
+    print("2. Carry on your journey")                                                                                                                   # option 2 (carry on your journey)
+
+    choice = input("> ")
+
+    if choice == "1":
+        stop_at_village()
+    elif choice == "2":
+        carry_on_journey()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+
+def lots_of_food():                                                                                                                                # lots of food function
+    print("You have picked to bring a lot of food and your wheel broke, what do you want to do?")
+    print("1. fix it with spare wheel")                                                                                                            # option 1 (fix wheel)
+    print("2. ditch it and keep going without your wagon and go with your horse")                                                                  # option 2 (ditch wagon)
+
+    choice = input("> ")
+
+    if choice == "1":
+        fix_wheel()
+    elif choice == "2":
+        ditch_wagon()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+
+def little_food():                                                                                                                           # little amount of food function
+    print("You have picked to bring a little amount of food, what do you want to do?")
+    print("1. carry on the trip")                                                                                                            # option 1 (carry on your journey)
+    print("2. stop at the nearest store")                                                                                                    # option 2 (stop at the nearest store)
+
+    choice = input("> ")
+
+    if choice == "1":
+        go_with_little_food()
+    elif choice == "2":
+        stop_at_store()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+
+# START OF MORE FUNCTIONS
+
+def stay_on_mountain():                                                                                                                      # stoy on mountain function
+    print("You have stayed on top of the mountain and you got buried in snow and died from hypothermia. start over")                         # user dies
+    start_adventure()                                                                                                                        # start the game over
+
+
+def keep_walking_rockies():                                                                                                                     # keep walking on the rockies function
+    print("You have decided to walk through the blizzard, you made it out alive. You see a small town in the distance, do you want to?")
+    print("1. stop at the town")                                                                                                                # option 1 (stop at the town)
+    print("2. not visit the town")                                                                                                              # option 2 (don't stop at the town)
+
+    choice = input("> ")
+
+    if choice == "1":
+        stop_at_town()
+    elif choice == "2":
+        not_visit_town()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+
+def go_home():                                                                                                                                  # go home function
+    print("You have decided to go home and you live happily ever after. start game over")                                                       # user  lives happily ever after and game starts over
+    start_adventure()
+
+def hunt_for_food_rockies():                                                                                                                     # hunt for food on rockies functtion
+    print("You run into a wolf while hunting for food, what do you want to do?")                                                                 # user runs into a wolf
+    print("1. Try to befriend it")                                                                                                               # option 1 (befriend wolf)
+    print("2. try to fight it")                                                                                                                  # option 2 (fight the wolf)
+
+    choice = input("> ")
+
+    if choice == "1":
+        befriend_wolf()
+    elif choice == "2":
+        fight_wolf()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+def go_to_bed():                                                                                                                                                                         #go to bed function
+    print("You have decided to go to bed right away. When you wake up you found out that you have been effected by a plague that is going through your town. Do you want to:")
+    print("1. cancel the whole trip")                                                                                                                                                    # option 1 (cancel trip)
+    print("2. go see the doctor")                                                                                                                                                        # option 2 (go see doctor)
+
+    choice = input("> ")
+
+    if choice == "1":
+        cancel_trip()
+    elif choice == "2":
+        go_see_doctor()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+def pack_your_stuff():                                                                                                                                                                  # pack your sstuff function
+    print("You have finished packing and are planning on going to bed, what do you want to do before you go to bed?")
+    print("1. make something to eat before bed")                                                                                                                                        # make something to eat
+    print("2. go shower")                                                                                                                                                               # go shower
+
+    choice = input("> ")
+
+    if choice == "1":
+        make_food()
+    elif choice == "2":
+        go_shower()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+def go_to_work():                                                                                                                                                       # go to work function
+    print("You have decided to go to work")
+
+    choice = input("> ")
+
+    if choice == "1":
+    elif choice == "2":
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+def visit_neighbors_bakery():                                                                                                                                           # visit neighbors function
+    print("You have decided to go visit your neighbors at their bakery. They kidnap you and force you to work for them the rest of your life. Try the game again")      # user is kidnapped
+    start_adventure()                                                                                                                                                   # start the game over
+
+def talk_to_hillbillies():                                                                                                                                                                                  # talk to hillbillies function
+    print("You go to talk the hillbillies and they take you into the local blacksmith. They take you to the basement and lock you up in the dungeon for the rest of your life. Try the game again")         # user is locked up for life
+    start_adventure()
+
+def fight_hillbillies():
+    print("You have picked to fight the hillbillies and they end up poisoning you and you die. Start over")
+    start_adventure()
+
+def stop_at_village():
+    print(" ")
     print("1. ")
     print("2. ")
 
+    choice = input("> ")
 
-def leave_friday():
-    print("You have chose to leave Friday morning")
+    if choice == "1":
+    elif choice == "2":
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+def carry_on_journey():
+    print(" ")
     print("1. ")
     print("2. ")
 
-def over_appalachian_mountains():
-    print("You have decided to go over the appalachian mountains")
+    choice = input("> ")
+
+    if choice == "1":
+    elif choice =="2":
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+def fix_wheel():
+    print("You decided to fix the wheel and you forgot to tie your horse up while fixing it and the horse roams off. What do you want to do?")
     print("1. ")
     print("2. ")
 
-def around_appalachian_mountains():
-    print("You have picked to go around the appalachian mountains")
-    print("1. ")
-    print("2. ")
+    choice = input("> ")
 
-def lots_of_food():
-    print("You have pickedd to bring a lot of food")
-    print("1. ")
-    print("2. ")
+def ditch_wagon():
 
-def little_food():
-    print("You have picked to bring a little amount of food")
-    print("1. ")
-    print("2. ")
+def go_with_little_food():
+    print("You run out of food and die of starvation. Start over")
+    start_adventure()
+
+def stop_at_store(): 
 
 
 
+# START OF THE NEXT ROUND OF FUNCTIONS (MORE TOWARDS THE ENDING)
+    
+def stop_at_town():
+
+def not_visit_town():
+
+def befriend_wolf():
+
+def fight_wolf():
+
+def cancel_trip():
+
+def go_see_doctor():
+
+def make_food():
+
+def go_shower():
 
 
 
