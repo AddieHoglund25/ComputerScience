@@ -314,15 +314,8 @@ def pack_your_stuff():                                                          
         start_adventure()
 
 def go_to_work():                                                                                                                                                       # go to work function
-    print("You have decided to go to work")
-
-    choice = input("> ")
-
-    if choice == "1":
-    elif choice == "2":
-    else:
-        print("invalid choice, start over")
-        start_adventure()
+    print("You have decided to go to work and decided to never go to Washington. Start over")
+    start_adventure()
 
 def visit_neighbors_bakery():                                                                                                                                           # visit neighbors function
     print("You have decided to go visit your neighbors at their bakery. They kidnap you and force you to work for them the rest of your life. Try the game again")      # user is kidnapped
@@ -337,68 +330,121 @@ def fight_hillbillies():
     start_adventure()
 
 def stop_at_village():
-    print(" ")
-    print("1. ")
-    print("2. ")
-
-    choice = input("> ")
-
-    if choice == "1":
-    elif choice == "2":
-    else:
-        print("invalid choice, start over")
-        start_adventure()
+    print("They had magical powers that took all of your knowledge away and trained you to be a farmer. Start over")
+    start_adventure()
 
 def carry_on_journey():
-    print(" ")
-    print("1. ")
-    print("2. ")
+    print("You have decided to carry on with your journey, do you want to camp out in the middle of the woods?")
+    print("1. Yes")
+    print("2. No")
 
     choice = input("> ")
 
     if choice == "1":
+        camp_out_woods()
     elif choice =="2":
+        dont_camp_woods()
     else:
         print("invalid choice, start over")
         start_adventure()
 
 def fix_wheel():
     print("You decided to fix the wheel and you forgot to tie your horse up while fixing it and the horse roams off. What do you want to do?")
-    print("1. ")
-    print("2. ")
+    print("1. find the horse")
+    print("2. leave everything and just walk the rest")
 
     choice = input("> ")
 
-def ditch_wagon():
+    if choice == "1":
+        find_horse()
+    elif choice == "2":
+        leave_everything()
+    else:
+        print ("invalid choice, start over")
+        start_adventure
 
-def go_with_little_food():
-    print("You run out of food and die of starvation. Start over")
+def ditch_wagon():
+    print("You decided to ditch your wagon and take your horse. While crossing over a river, your horse got stuck. You tried to get your horse out and you died of drowning. Start over")
     start_adventure()
 
-def stop_at_store(): 
+def go_with_little_food():
+    print ("You run out of food and die of starvation. start over")
+    start_adventure()
+
+def stop_at_store():
+    print("You have decided to go the store and you got hit by another horse and buggy. You are in critical condition and spend months in the hospital, while there is nothing to save you. You died 3 months later. Start over")
+    start_adventure()
 
 
 
 # START OF THE NEXT ROUND OF FUNCTIONS (MORE TOWARDS THE ENDING)
     
 def stop_at_town():
+    print("You have picked to stop at the town and they do not allow outside people to come in. They hold you captive and use you as a sacrafice. Start over")
+    start_adventure()
 
 def not_visit_town():
+    print("You picked not to visit the town and made it there safely. Congratualations, you have won the game. start over")
+    start_adventure()
 
 def befriend_wolf():
+    print("You and the wolf have become best friends and you live happily ever after with the wolf and it's pack. Try again")
+    start_adventure()
 
 def fight_wolf():
+    print("You have picked to fight the wolf. During the intense battle the wolf called for back up to help injure you. They eventually leave you alone and you end up bleeding to death. Start over")
+    start_adventure()
 
 def cancel_trip():
+    print("You cancelled the whole trip, start over")
+    start_adventure()
 
 def go_see_doctor():
+    print("You go see the doctor and your symptoms keep getting worse. You die a week later. Start over")
+    start_adventure()
 
 def make_food():
+    print("You made food but there was an accidental cross contamination with peanuts and die due to a severe allergic reaction. start over")
+    start_adventure()
 
 def go_shower():
+    print("You slipped trying to get out of the shower and got put into a coma. start over")
+    start_adventure()
 
+def camp_out_woods():
+    print("You have decided to camp out in the woods, do you want to start a fire?")
+    print("1. Yes")
+    print("2. No")
 
+    choice = input("> ")
 
+    if choice == "1":
+        start_fire()
+    elif choice == "2":
+        no_fire()
+    else:
+        print("invalid choice, start over")
+        start_adventure()
+
+def dont_camp_woods():
+
+def find_horse():
+    print("You tried to find your horse and accidentally fell off a mountain. Start over")
+    start_adventure()
+
+def leave_everything():
+    print("You decided to leave everything and walk the rest of the way there. You ran out of food and no one was near to give you some, you died of starvation. Start over")
+    start_adventure()
+
+# MORE FUNCTIONS
+
+def start_fire():
+    print("You accidentally set your tent on fire while you were in it and couldn't get out alive, start over")
+    start_adventure()
+
+def no_fire():
+    print("You picked not to start a fire and get severe hypothermia and have to ampuatate your feet. start over")
+    start_adventure()
 
 
 start_adventure()
