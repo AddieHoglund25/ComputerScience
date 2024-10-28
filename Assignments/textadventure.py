@@ -427,9 +427,11 @@ def camp_out_woods():
         start_adventure()
 
 def dont_camp_woods():
+    print("You decided not to camp in the woods and then the night comes fast and you are lost in the woods forever. start over")
+    start_adventure()
 
 def find_horse():
-    print("You tried to find your horse and accidentally fell off a mountain. Start over")
+    print ("You tried to find your horse and accidentally fell off a mountain. start over")
     start_adventure()
 
 def leave_everything():
