@@ -325,18 +325,18 @@ def talk_to_hillbillies():                                                      
     print("You go to talk the hillbillies and they take you into the local blacksmith. They take you to the basement and lock you up in the dungeon for the rest of your life. Try the game again")         # user is locked up for life
     start_adventure()
 
-def fight_hillbillies():
-    print("You have picked to fight the hillbillies and they end up poisoning you and you die. Start over")
+def fight_hillbillies():                                                                                                                                                # fight hillbillies
+    print("You have picked to fight the hillbillies and they end up poisoning you and you die. Start over")                                                             # user died
     start_adventure()
 
-def stop_at_village():
-    print("They had magical powers that took all of your knowledge away and trained you to be a farmer. Start over")
+def stop_at_village():                                                                                                                                                  # you stop at the village
+    print("They had magical powers that took all of your knowledge away and trained you to be a farmer. Start over")                                                    # you are trained to be a farmer, start over
     start_adventure()
 
-def carry_on_journey():
+def carry_on_journey():                                                                                                                                                 #  carry on journey function
     print("You have decided to carry on with your journey, do you want to camp out in the middle of the woods?")
-    print("1. Yes")
-    print("2. No")
+    print("1. Yes")                                                                                                                                                     # option 1 (yes)
+    print("2. No")                                                                                                                                                      # option 2 (no)
 
     choice = input("> ")
 
@@ -348,10 +348,10 @@ def carry_on_journey():
         print("invalid choice, start over")
         start_adventure()
 
-def fix_wheel():
+def fix_wheel():                                                                                                                                                        # fix wheel function
     print("You decided to fix the wheel and you forgot to tie your horse up while fixing it and the horse roams off. What do you want to do?")
-    print("1. find the horse")
-    print("2. leave everything and just walk the rest")
+    print("1. find the horse")                                                                                                                                          # option 1 (find the horse)
+    print("2. leave everything and just walk the rest")                                                                                                                 # option 2 (walk rest of the waY)
 
     choice = input("> ")
 
@@ -363,58 +363,58 @@ def fix_wheel():
         print ("invalid choice, start over")
         start_adventure
 
-def ditch_wagon():
-    print("You decided to ditch your wagon and take your horse. While crossing over a river, your horse got stuck. You tried to get your horse out and you died of drowning. Start over")
+def ditch_wagon():                                                                                                                                                                                  # ditch wagon function
+    print("You decided to ditch your wagon and take your horse. While crossing over a river, your horse got stuck. You tried to get your horse out and you died of drowning. Start over")           # usere dies by drowning, start over
     start_adventure()
 
-def go_with_little_food():
-    print ("You run out of food and die of starvation. start over")
+def go_with_little_food():                                                                                              # little amount of food function
+    print ("You run out of food and die of starvation. start over")                                                     # you run out of food and die of starvation
     start_adventure()
 
-def stop_at_store():
-    print("You have decided to go the store and you got hit by another horse and buggy. You are in critical condition and spend months in the hospital, while there is nothing to save you. You died 3 months later. Start over")
+def stop_at_store():                                                                                                                                                                                                                       # stop at store function
+    print("You have decided to go the store and you got hit by another horse and buggy on the way. You are in critical condition and spend months in the hospital, while there is nothing to save you. You died 3 months later. Start over")           # critically injured to due to get hit by a horse and buggy and die, start over
     start_adventure()
 
 
 
 # START OF THE NEXT ROUND OF FUNCTIONS (MORE TOWARDS THE ENDING)
     
-def stop_at_town():
-    print("You have picked to stop at the town and they do not allow outside people to come in. They hold you captive and use you as a sacrafice. Start over")
+def stop_at_town():                                                                                                                                                     # stop at town function
+    print("You have picked to stop at the town and they do not allow outside people to come in. They hold you captive and use you as a sacrafice. Start over")          # used as a sacrafice
     start_adventure()
 
-def not_visit_town():
-    print("You picked not to visit the town and made it there safely. Congratualations, you have won the game. start over")
+def not_visit_town():                                                                                                               # not to stop at town function
+    print("You picked not to visit the town and made it there safely. Congratualations, you have won the game. start over")         # USER WINS THE GAME    
     start_adventure()
 
-def befriend_wolf():
-    print("You and the wolf have become best friends and you live happily ever after with the wolf and it's pack. Try again")
+def befriend_wolf():                                                                                                                # user befriends the wolf function
+    print("You and the wolf have become best friends and you live happily ever after with the wolf and it's pack. Try again")       # user lives with the wolves the rest of their live, start over
     start_adventure()
 
-def fight_wolf():
-    print("You have picked to fight the wolf. During the intense battle the wolf called for back up to help injure you. They eventually leave you alone and you end up bleeding to death. Start over")
+def fight_wolf():                                                                                                                                                                                                  # fight wolf function
+    print("You have picked to fight the wolf. During the intense battle the wolf called for back up to help injure you. They eventually leave you alone and you end up bleeding to death. Start over")             # user bleeds to death by fighting wolves, start over
     start_adventure()
 
-def cancel_trip():
-    print("You cancelled the whole trip, start over")
+def cancel_trip():                                                  # user cancels trip function
+    print("You cancelled the whole trip, start over")               # cancel trip, start over
     start_adventure()
 
-def go_see_doctor():
-    print("You go see the doctor and your symptoms keep getting worse. You die a week later. Start over")
+def go_see_doctor():                                                                                            # go see doctor function
+    print("You go see the doctor and your symptoms keep getting worse. You die a week later. Start over")       # user dies of sickness, start over
     start_adventure()
 
-def make_food():
-    print("You made food but there was an accidental cross contamination with peanuts and die due to a severe allergic reaction. start over")
+def make_food():                                                                                                                                        # make food function
+    print("You made food but there was an accidental cross contamination with peanuts and die due to a severe allergic reaction. start over")           # user dies of severe allergic reaction
     start_adventure()
 
-def go_shower():
-    print("You slipped trying to get out of the shower and got put into a coma. start over")
+def go_shower():                                                                                    # go shower function
+    print("You slipped trying to get out of the shower and got put into a coma. start over")        # user gets concussion and put into a coma, start over
     start_adventure()
 
-def camp_out_woods():
-    print("You have decided to camp out in the woods, do you want to start a fire?")
-    print("1. Yes")
-    print("2. No")
+def camp_out_woods():                                                                           # camp out in woods function
+    print("You have decided to camp out in the woods, do you want to start a fire?")            # ask user if they want to start a fire
+    print("1. Yes")                                                                             # option 1 (yes)
+    print("2. No")                                                                              # option 2 (no)
 
     choice = input("> ")
 
@@ -426,26 +426,26 @@ def camp_out_woods():
         print("invalid choice, start over")
         start_adventure()
 
-def dont_camp_woods():
-    print("You decided not to camp in the woods and then the night comes fast and you are lost in the woods forever. start over")
+def dont_camp_woods():                                                                                                                  # don't camp out in woods functtion
+    print("You decided not to camp in the woods and then the night comes fast and you are lost in the woods forever. start over")       # user is lost in the woods forever, start over
     start_adventure()
 
-def find_horse():
-    print ("You tried to find your horse and accidentally fell off a mountain. start over")
+def find_horse():                                                                                       # find horse function
+    print ("You tried to find your horse and accidentally fell off a mountain. start over")             # user falls off the mountain, start over
     start_adventure()
 
-def leave_everything():
-    print("You decided to leave everything and walk the rest of the way there. You ran out of food and no one was near to give you some, you died of starvation. Start over")
+def leave_everything():                                                                                                                                                         # leave everything function
+    print("You decided to leave everything and walk the rest of the way there. You ran out of food and no one was near to give you some, you died of starvation. Start over")   # user died of starvation, start over
     start_adventure()
 
 # MORE FUNCTIONS
 
-def start_fire():
-    print("You accidentally set your tent on fire while you were in it and couldn't get out alive, start over")
+def start_fire():                                                                                                         # start fire function
+    print("You accidentally set your tent on fire while you were in it and couldn't get out alive, start over")           # set tent on fire and died in fire, start over
     start_adventure()
 
-def no_fire():
-    print("You picked not to start a fire and get severe hypothermia and have to ampuatate your feet. start over")
+def no_fire():                                                                                                          # no fire function
+    print("You picked not to start a fire and get severe hypothermia and have to ampuatate your feet. start over")      # got severe hypothermia and had to amputate feet, start over
     start_adventure()
 
 
