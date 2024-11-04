@@ -41,12 +41,3 @@ print(grocery_list)
 # Create a list of five random numbers from 0-100
 # use a for loop to find the sum of those numbers
 
-
-
-
-
-
-
-
-
-
