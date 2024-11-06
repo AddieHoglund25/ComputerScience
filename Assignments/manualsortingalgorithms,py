@@ -20,3 +20,69 @@ def bubble_sort(numbers):       # take the list as a parameter
     print("Completed in " + str(steps) + " steps.")
 
 bubble_sort(nums)
+
+
+
+# Quick sort algorithm
+
+print("--------------------------------------------")
+print("QUICK SORT")
+
+#generate a list of 5 random numbers and print it
+numbers = [random.randint(0,100), random.randint(0,100), random.randint(0,100), random.randint(0,100)]
+
+print(numbers)
+
+
+#define quick sort function
+def quick_sort(n):
+    #set pivot as the last number
+    pivot = n[-1]
+
+   
+    # l first number from the left that is LARGER
+    lPos = 0                # set to default
+    # r first number from the right that is SMALLER
+    rPos = len(n)-1         # set to default
+
+    for j in range(0, len(n)):
+
+        # find l
+        for i in range(0, len(n)):
+            if n[i] > pivot:
+                lPos = i
+                break 
+
+        # find r
+            for i in range(len(n)-1, -1, -1):
+                if n[i] < pivot:
+                    rPos = i
+                    break
+
+        # check if l index is greater than r index
+        if lPos > rPos:
+            #switch pivot with item from left
+            n[lPos], n[-1] = n[-1], n[lPos]
+            #stop sorting
+            break
+        else:
+            # swap l and r values
+            n[lPos], n[rPos] = n[rPos], n[lPos]
+
+
+    print(n)
+
+quick_sort(numbers)
+
+numbers = [random.randint(0,100), random.randint(0,100), random.randint(0,100), random.randint(0,100)]
+print(numbers)
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less_than_pivot = [x for x in arr[1:] if x <= pivot]
+        greater_than_pivot = [x for x in arr[1:] if x > pivot]
+        return quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
+    
+print (quicksort(numbers))
