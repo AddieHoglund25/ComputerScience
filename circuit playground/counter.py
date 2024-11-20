@@ -5,17 +5,18 @@
 from adafruit_circuitplayground import cp
 import time
 
-button = 0
+button = -1
 
 while True:
   
     if cp.button_a:
-        if button <= 9:
-            cp.pixels[button] = (0, 0, 1)
-            button == button + 1
+        if button < 9:                      # stopper if the number of presses on button is over 9
+            cp.pixels[button] = (0, 0, 1)   # will turn LED to blue
+            button == button + 1            # LED + 1 every time button A is pressed
             time.sleep(0.2)
 
     if cp.button_b:
-            cp.pixels[button] = (0, 0, 0)
-            button == button - 1
+        if button > -1:                     # stopper if the number of presses on button is below -1
+            cp.pixels[button] = (0, 0, 0)   # will turn LED to black
+            button == button - 1            # LED - 1 evert time button B is pressed
             time.sleep(0.2)
