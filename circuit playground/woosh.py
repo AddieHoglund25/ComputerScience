@@ -14,6 +14,6 @@ while True:
             cp.pixels[led] = (0, 0, 200)        # set color of leds to blue
             time.sleep = (0.1)                  # time intervals of 0.1 seconds
             cp.pixels[led] = (0, 0, 0)          # set color of leds to black
-            time.sleep = (0.1)                  # time intervals of 0.1
+
     else:
         cp.pixels.fill((0, 0, 0))               # if anything else happens, leds will go straight to black
